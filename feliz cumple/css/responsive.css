@@ -1,0 +1,259 @@
+/* =================================== */
+/* RESPONSIVE DESIGN */
+/* =================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .gift img {
+        max-width: 340px;
+    }
+
+    .contador h2 {
+        font-size: 75px;
+    }
+
+}
+
+
+/* Celulares grandes */
+
+@media (max-width:768px) {
+
+    header {
+
+        padding: 0 20px;
+
+        height: 65px;
+
+    }
+
+    .logo h2 {
+
+        font-size: 28px;
+
+    }
+
+    .hero {
+
+        padding: 10px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 42px;
+
+        line-height: 50px;
+
+    }
+
+    .badge {
+
+        font-size: 12px;
+
+        padding: 10px 20px;
+
+    }
+
+    .gift {
+
+        margin-top: 45px;
+
+    }
+
+    .gift img {
+
+        width: 90%;
+
+    }
+
+    .btn-regalo {
+
+        width: 100%;
+
+        font-size: 22px;
+
+        padding: 18px;
+
+    }
+
+    .contador {
+
+        padding: 30px 20px;
+
+    }
+
+    .contador h2 {
+
+        font-size: 65px;
+
+    }
+
+    .contador span {
+
+        font-size: 28px;
+
+    }
+
+    .contador p:last-child {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* Celulares pequeños */
+
+@media (max-width:480px) {
+
+    header {
+
+        padding: 0 15px;
+
+    }
+
+    .logo h2 {
+
+        font-size: 23px;
+
+    }
+
+    .logo i {
+
+        font-size: 22px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+
+        line-height: 42px;
+
+    }
+
+    .badge {
+
+        font-size: 11px;
+
+        letter-spacing: 1px;
+
+    }
+
+    .gift {
+
+        margin-top: 35px;
+
+    }
+
+    .gift img {
+
+        width: 95%;
+
+    }
+
+    .btn-regalo {
+
+        font-size: 18px;
+
+        padding: 16px;
+
+        border-radius: 15px;
+
+    }
+
+    .contador {
+
+        margin: 50px 10px;
+
+        padding: 25px 15px;
+
+    }
+
+    .contador h2 {
+
+        font-size: 55px;
+
+    }
+
+    .contador span {
+
+        font-size: 22px;
+
+    }
+
+    .contador p {
+
+        font-size: 15px;
+
+    }
+
+    .bottom-menu {
+
+        height: 75px;
+
+    }
+
+    .bottom-menu a i {
+
+        font-size: 20px;
+
+    }
+
+    .bottom-menu a span {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* Pantallas grandes */
+
+@media (min-width:1200px) {
+
+    body {
+
+        background: #eef1f7;
+
+    }
+
+    main {
+
+        max-width: 650px;
+
+    }
+
+    header {
+
+        max-width: 650px;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        border-radius: 0 0 20px 20px;
+
+    }
+
+    .bottom-menu {
+
+        max-width: 650px;
+
+    }
+
+}
