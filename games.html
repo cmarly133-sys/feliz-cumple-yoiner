@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juegos | feliz cumple</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h2>feliz cumple</h2>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <span class="badge">
+                JUEGO DE LOS RECUERDOS
+            </span>
+
+            <h1>
+
+                ¿Cuánto recuerdas de nosotros?
+
+            </h1>
+
+            <p style="margin-top:20px; color:#555; font-size:18px;">
+
+                Adivina correctamente las fechas para desbloquear nuestros recuerdos ❤️
+
+            </p>
+
+        </section>
+
+
+
+        <!-- PROGRESO -->
+
+        <section class="card">
+
+            <h3>Progreso</h3>
+
+            <div class="progress">
+
+                <div class="progress-bar" id="progressBar">
+
+                </div>
+
+            </div>
+
+            <p id="progressText">
+
+                0 de 3 recuerdos desbloqueados
+
+            </p>
+
+        </section>
+
+
+
+
+        <!-- PREGUNTA 1 -->
+
+        <section class="card">
+
+            <h2>
+
+                ❤️ ¿Qué día nos conocimos?
+
+            </h2>
+
+            <input type="date" id="fecha1">
+
+            <button class="btn-regalo" onclick="comprobarFecha(1)">
+
+                Desbloquear
+
+            </button>
+
+        </section>
+
+
+
+
+
+        <!-- PREGUNTA 2 -->
+
+        <section class="card">
+
+            <h2>
+
+                🌹 ¿Cuál fue nuestra primera cita?
+
+            </h2>
+
+            <input type="date" id="fecha2">
+
+            <button class="btn-regalo" onclick="comprobarFecha(2)">
+
+                Desbloquear
+
+            </button>
+
+        </section>
+
+
+
+
+
+        <!-- PREGUNTA 3 -->
+
+        <section class="card">
+
+            <h2>
+
+                🎂 ¿Cuándo fue nuestro primer cumpleaños juntos?
+
+            </h2>
+
+            <input type="date" id="fecha3">
+
+            <button class="btn-regalo" onclick="comprobarFecha(3)">
+
+                Desbloquear
+
+            </button>
+
+        </section>
+
+
+
+
+        <!-- MENSAJE -->
+
+        <section class="card" id="mensajeFinal" style="display:none; text-align:center;">
+
+            <h2>
+
+                🎉 ¡Lo lograste!
+
+            </h2>
+
+            <p>
+
+                Has desbloqueado todos los recuerdos.
+
+                Ahora puedes ver nuestra galería ❤️
+
+            </p>
+
+            <br>
+
+            <button class="btn-regalo" onclick="window.location='memories.html'">
+
+                Ir a los recuerdos
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <nav class="bottom-menu">
+
+        <a href="index.html">
+
+            <i class="fa-solid fa-gift"></i>
+
+            <span>Inicio</span>
+
+        </a>
+
+        <a href="games.html">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <span>Juegos</span>
+
+        </a>
+
+        <a href="memories.html">
+
+            <i class="fa-solid fa-image"></i>
+
+            <span>Recuerdos</span>
+
+        </a>
+
+        <a href="message.html">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <span>Carta</span>
+
+        </a>
+
+    </nav>
+
+    <script src="js/games.js"></script>
+
+</body>
+
+</html>

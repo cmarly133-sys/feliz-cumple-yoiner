@@ -1,0 +1,293 @@
+/* =========================
+   BRILLO DEL REGALO
+========================= */
+
+@keyframes brillo {
+
+    0% {
+        box-shadow: 0 0 20px rgba(180, 134, 5, .25);
+    }
+
+    50% {
+        box-shadow: 0 0 45px rgba(180, 134, 5, .6);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(180, 134, 5, .25);
+    }
+}
+
+.gift img {
+    animation: brillo 3s infinite ease-in-out;
+}
+
+
+/* =========================
+   FLOTAR REGALO
+========================= */
+
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.gift {
+    animation: flotar 5s infinite ease-in-out;
+}
+
+
+/* =========================
+   BOTÓN PULSANTE
+========================= */
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-regalo {
+    animation: pulse 2s infinite;
+}
+
+
+/* =========================
+   DESTELLOS DORADOS
+========================= */
+
+@keyframes destello {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5) rotate(360deg);
+    }
+}
+
+.sparkle {
+
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--doradoClaro);
+    border-radius: 50%;
+    animation: destello 3s infinite;
+}
+
+
+/* =========================
+   CORAZONES FLOTANTES
+========================= */
+
+@keyframes subirCorazon {
+
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-180px) scale(1.8);
+        opacity: 0;
+    }
+}
+
+.corazon {
+
+    position: fixed;
+    bottom: 80px;
+    font-size: 28px;
+    color: #ff3b6b;
+    pointer-events: none;
+    z-index: 9999;
+    animation: subirCorazon 2s linear forwards;
+}
+
+
+/* =========================
+   CONFETI
+========================= */
+
+@keyframes caerConfeti {
+
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.confeti {
+
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    top: -20px;
+    z-index: 9998;
+    animation: caerConfeti 4s linear forwards;
+}
+
+
+/* =========================
+   APARICIÓN SUAVE
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero,
+.contador,
+.card {
+    animation: aparecer .8s ease-out;
+}
+
+
+/* =========================
+   TARJETAS DE RECUERDOS
+========================= */
+
+@keyframes flotarCard {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(-1deg);
+    }
+}
+
+.polaroid {
+    animation: flotarCard 6s infinite ease-in-out;
+}
+
+
+/* =========================
+   EFECTO HOVER TARJETAS
+========================= */
+
+.polaroid:hover {
+
+    transform: scale(1.03) rotate(0deg);
+    transition: .4s;
+    z-index: 10;
+}
+
+
+/* =========================
+   FONDO BRILLANTE
+========================= */
+
+@keyframes moverFondo {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body::before {
+
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(180, 134, 5, .04),
+            rgba(255, 255, 255, 0),
+            rgba(8, 22, 66, .03));
+    background-size: 200% 200%;
+    animation: moverFondo 12s ease infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* =========================
+   REBOTE SUAVE DEL CONTADOR
+========================= */
+
+@keyframes rebote {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.05);
+    }
+
+    60% {
+        transform: scale(0.98);
+    }
+}
+
+.contador h2 {
+    animation: rebote 3s infinite;
+}
+
+
+/* =========================
+   EFECTO DE CLIC
+========================= */
+
+.btn-regalo:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================
+   SOMBRA DORADA EN TARJETAS
+========================= */
+
+.gold-card {
+    box-shadow: 0 0 0 1px rgba(180, 134, 5, .25),
+        0 10px 30px rgba(180, 134, 5, .15);
+}

@@ -1,0 +1,632 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #f8f8fb;
+    color: #081642;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+
+/* ========================= */
+/* COLORES */
+/* ========================= */
+
+:root {
+
+    --azul: #081642;
+    --dorado: #b48605;
+    --doradoClaro: #f7e7b3;
+    --blanco: #ffffff;
+    --gris: #f5f6fa;
+    --gris2: #e4e4e4;
+
+}
+
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 70px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 25px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .05);
+
+    z-index: 1000;
+
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.logo i {
+
+    color: var(--azul);
+
+    font-size: 26px;
+
+}
+
+.logo h2 {
+
+    color: var(--dorado);
+
+    font-size: 35px;
+
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+.menu {
+
+    border: none;
+
+    background: none;
+
+    font-size: 24px;
+
+    color: var(--azul);
+
+    cursor: pointer;
+
+}
+
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+main {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding-top: 100px;
+
+    padding-bottom: 120px;
+
+}
+
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero {
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    background: #fff3cf;
+
+    color: var(--dorado);
+
+    padding: 12px 28px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+
+}
+
+.hero h1 {
+
+    font-size: 55px;
+
+    line-height: 65px;
+
+    font-weight: 800;
+
+    color: var(--azul);
+
+}
+
+.hero h1 span {
+
+    color: var(--dorado);
+
+}
+
+
+/* ========================= */
+/* REGALO */
+/* ========================= */
+
+.gift {
+
+    margin-top: 60px;
+
+    margin-bottom: 40px;
+
+}
+
+.gift img {
+
+    width: 100%;
+
+    max-width: 380px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 25px 60px rgba(180, 134, 5, .25);
+
+}
+
+
+/* ========================= */
+/* BOTÓN */
+/* ========================= */
+
+.btn-regalo {
+
+    margin-top: 20px;
+
+    width: 100%;
+
+    padding: 22px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: var(--dorado);
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    font-weight: 700;
+
+}
+
+.btn-regalo:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 35px rgba(0, 0, 0, .18);
+
+}
+
+
+/* ========================= */
+/* CONTADOR */
+/* ========================= */
+
+.contador {
+
+    margin: 70px 20px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+}
+
+.contador p:first-child {
+
+    font-size: 18px;
+
+    letter-spacing: 5px;
+
+    color: #555;
+
+}
+
+.contador h2 {
+
+    margin-top: 20px;
+
+    font-size: 90px;
+
+    color: var(--azul);
+
+}
+
+.contador span {
+
+    font-size: 35px;
+
+    color: #555;
+
+}
+
+.contador p:last-child {
+
+    margin-top: 20px;
+
+    font-size: 24px;
+
+}
+
+
+/* ========================= */
+/* MENÚ INFERIOR */
+/* ========================= */
+
+.bottom-menu {
+
+    position: fixed;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    max-width: 600px;
+
+    height: 85px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    box-shadow: 0 -3px 18px rgba(0, 0, 0, .08);
+
+    border-top-left-radius: 25px;
+
+    border-top-right-radius: 25px;
+
+}
+
+.bottom-menu a {
+
+    text-decoration: none;
+
+    color: var(--azul);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    transition: .3s;
+
+}
+
+.bottom-menu a i {
+
+    font-size: 22px;
+
+}
+
+.bottom-menu a span {
+
+    font-size: 14px;
+
+}
+
+.bottom-menu a:hover {
+
+    color: var(--dorado);
+
+}
+
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
+.card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+
+    margin: 25px;
+
+}
+
+
+/* ========================= */
+/* INPUTS */
+/* ========================= */
+
+input {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    border: 2px solid #ddd;
+
+    outline: none;
+
+    font-size: 18px;
+
+    margin-top: 15px;
+
+}
+
+input:focus {
+
+    border-color: var(--dorado);
+
+}
+
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+button {
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+/* ========================= */
+/* BARRA DE PROGRESO */
+/* ========================= */
+
+.progress {
+
+    width: 100%;
+
+    height: 18px;
+
+    background: #e6e6e6;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin: 20px 0;
+
+}
+
+.progress-bar {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: linear-gradient(90deg, #FFD700, #F4B400);
+
+    border-radius: 20px;
+
+    transition: .6s;
+
+}
+
+/*========================================*/
+/* TARJETAS DE RECUERDOS */
+/*========================================*/
+
+.memory-card {
+
+    background: white;
+
+    margin: 30px 20px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+    transition: .4s;
+
+}
+
+.memory-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.memory-card img {
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+}
+
+.memory-info {
+
+    padding: 25px;
+
+}
+
+.memory-info h2 {
+
+    color: #081642;
+
+    margin-bottom: 15px;
+
+    font-size: 30px;
+
+}
+
+.memory-info p {
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 30px;
+
+}
+
+/*====================================*/
+/* CARTA */
+/*====================================*/
+
+.letter-card {
+
+    background: white;
+
+    margin: 30px 20px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+    animation: subir 1s;
+
+}
+
+.letter-card h2 {
+
+    font-size: 40px;
+
+    color: #081642;
+
+    margin-bottom: 25px;
+
+}
+
+.letter-card h3 {
+
+    margin-top: 35px;
+
+    font-size: 30px;
+
+    color: #b48605;
+
+    text-align: center;
+
+}
+
+.letter-card p {
+
+    font-size: 20px;
+
+    line-height: 40px;
+
+    margin-bottom: 20px;
+
+    color: #444;
+
+}
+
+@keyframes subir {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.video-regalo {
+
+    width: 100%;
+
+    max-width: 380px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+
+}
+
+/*========================================*/
+/* FOTO PEQUEÑA EN LOS RECUERDOS */
+/*========================================*/
+
+.foto-pequena{
+    width: 230px !important;
+    height: auto !important;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
